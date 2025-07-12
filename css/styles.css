@@ -3,12 +3,25 @@ body {
     background-color: #FFFFFF;
     color:#434455;
 }
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
 ul {
+    margin: 0;
+    padding-left: 0;
     list-style-type: none;
 }
 a {
     text-decoration: none;
     color: #2E2F42;
+}
+img {
+    display: block;
 }
 .navi .logo {
     font-family: "Raleway", sans-serif;
