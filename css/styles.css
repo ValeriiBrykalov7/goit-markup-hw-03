@@ -3,7 +3,7 @@ body {
     background-color: #FFFFFF;
     color:#434455;
 }
-h1, h2, h3 {
+h1, h2, h3, h4, h5, h6 {
     margin: 0;
     padding: 0;
 }
@@ -26,15 +26,15 @@ img {
 .container {
     max-width: 1440px;;
     margin: 0 auto;
-    padding-left: 156px;
-    padding-right: 156px;
+    padding: 0 156px;
 }
 
 .main-header .container {
     border-bottom: 1px solid#E7E9FC ;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 .navi .logo {
     font-family: "Raleway", sans-serif;
@@ -46,8 +46,7 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     padding-right: 76px;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    
 }
 .navi {
     display: flex;
@@ -55,9 +54,8 @@ img {
 }
 
 .menu {
-
     display: flex;
-    padding: 24px 332px 24px 0;
+    padding-right: 332px;
     gap: 40px;
 }
 .menu-title {
@@ -81,42 +79,39 @@ img {
 .direction {
     font-style: normal;
 }
-.direction .direction-list {
+.direction .list {
     display: flex;
     flex-direction: row;
     gap: 40px;
-    padding-bottom: 24px;
-    padding-top: 24px;
 }
-.direction .direction-title {
+.direction .title {
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #434455
 }
-.direction .direction-title:focus,
-.direction .direction-title:hover {
+.direction .title:focus,
+.direction .title:hover {
     color: #404BBF
 }
 
-.section-first .container {
+.hero .container {
         display: flex;
-        padding: 188px 472px 188px 472px;
-        flex-direction: column;
-        justify-content: center;
+        padding: 188px 0;
+        flex-direction: column; 
         align-items: center;
-    background-color:#2E2F42;
+        background-color:#2E2F42;
 }
-.section-first .main-title {
-    padding-bottom: 48px;
+.hero .main-title {
     font-size: 56px;
     font-weight: 700;
     line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
+    margin: 0 472px 48px;
     color: #FFFFFF;
 
 }
-.section-first .push {
+.hero .push {
     color: #FFFFFF;
     background-color:#4D5AE5;
     font-weight: 500;
@@ -128,17 +123,17 @@ color: #434455
     border-radius: 4px;
 }
 
- .section-first .push:hover,
- .section-first .push:focus {
+ .hero .push:hover,
+ .hero .push:focus {
     background-color: #404BBF;
  }
 .section-second .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:center;}
+    align-items:center;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-color: #FFFFFF;}
 
-.section-second-title {
+.section-second .title {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -150,14 +145,12 @@ color: #434455
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-.section-second .section-second-list {
+.section-second .list {
     display: flex;
     flex-direction: row;
-    padding-top: 120px;
-    padding-bottom: 120px;
     gap: 24px;
 }   
-.section-second-list .item {
+.section-second .item {
     width: calc((100% - 72px) / 4);
 }
 
@@ -167,6 +160,7 @@ color: #434455
      line-height: 1.2;
      letter-spacing: 0.02em;
      color: #2E2F42;
+     padding-bottom: 8px;
  }
 .section-second .text {
     color: #434455;
@@ -177,14 +171,14 @@ color: #434455
     display: flex;
     flex-direction: column;
     background-color: #F4F4FD;
-    padding: 120px 156px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    align-items: center;
 }
-
-.section-third-title {
+.section-third .title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
-    text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2E2F42;
@@ -218,16 +212,38 @@ color: #434455
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
-.section-fourth {
+
+.section-fourth .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 120px;
+    padding-bottom: 120px;
     background-color: #FFFFFF;
 }
-.section-fourth .section-fourth-title {
+.section-fourth .list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 48px;
+    column-gap: 24px;
+}
+.section-fourth .card {
+    width: calc((100% - 48px) / 3);
+}
+
+.section-fourth .title {
     font-size: 36px;
     line-height: 1.11;
-    text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    color: #2e2f42
+    color: #2e2f42;
+    margin-bottom: 72px;
+}
+.section-fourth .wrap {
+padding: 32px 16px;
+border-bottom: 1px solid #E7E9FC ;
+border-right: 1px solid #E7E9FC ;
+border-left: 1px solid #E7E9FC ;
 }
 .section-fourth .mini-title {
     font-weight: 500;
@@ -235,6 +251,7 @@ color: #434455
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    padding-bottom: 8px;
 
 }
 .section-fourth .text {
@@ -243,7 +260,10 @@ color: #434455
     letter-spacing: 0.02em;
 }
 
-.end {
+.end .container {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 156px;
     background-color: #2E2F42;
 }
 
@@ -255,6 +275,7 @@ color: #434455
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4D5AE5;
+    margin-bottom: 16px;
 }
 .logo .accent {
     color:#f4f4fd ;
@@ -264,4 +285,5 @@ color: #434455
     line-height: 1.5;
     color: #F4F4FD;
     letter-spacing: 0.02em;
+    max-width: 264px;
 }
