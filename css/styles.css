@@ -42,6 +42,7 @@ img {
     max-width: 1158px;
 }
 .navi .logo-header {
+    display: inline-block;
     font-family: "Raleway", sans-serif;
     font-size: 18px;
     color: #4d5ae5;
@@ -66,7 +67,7 @@ img {
     padding: 24px 0;
     width: calc((100% - 80px) / 3);
 }
-.navi .logo .accent {
+.navi .logo-header .accent {
     color:#2E2F42;
 }
 .navi .menu{
@@ -90,13 +91,13 @@ img {
     flex-direction: row;
     gap: 40px;
 }
-.direction .title {
+.direction .link {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455
 }
-.direction .title:focus,
-.direction .title:hover {
+.direction .link:focus,
+.direction .link:hover {
     color: #404BBF
 }
 /* section hero */
@@ -286,10 +287,8 @@ img {
     margin-bottom: 16px;
 }
 .logo .accent {
-    display: inline-block;
     color:#f4f4fd ;
 }
-    
 .end .text {
     line-height: 1.5;
     color: #F4F4FD;
