@@ -278,7 +278,8 @@ img {
     padding-left: 156px ;
     background-color: #2E2F42;
 }
-.footer-logo {
+.end .logo {
+    display: inline-block;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -287,9 +288,8 @@ img {
     text-transform: uppercase;
     color: #4D5AE5;
     margin-bottom: 16px;
-    display: inline-block;
 }
-.footer-logo .accent {
+.logo .accent {
     color:#f4f4fd ;
 }
 .end .text {
