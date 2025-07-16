@@ -108,7 +108,6 @@ img {
     display: flex;
     flex-direction: column; 
     align-items: center;
-    max-width: 1440px;
     background-color:#2E2F42;
 }
 .hero .main-title {
@@ -181,7 +180,6 @@ img {
     background-color: #F4F4FD;
 }
 .section-third .container {
-    max-width: 1440px;
     display: flex;
     flex-direction: column;
     background-color: #F4F4FD;
@@ -271,15 +269,12 @@ img {
     padding: 100px 0;
     background-color: #2E2F42;
 }
-.end .container {
-    max-width: 1440px;
+.end .container { 
     display: flex;
     flex-direction: column;
-    padding-left: 156px ;
     background-color: #2E2F42;
 }
 .end .logo {
-    display: inline-block;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -291,6 +286,9 @@ img {
 }
 .logo .accent {
     color:#f4f4fd ;
+}
+.logo {
+    display: inline-block;
 }
 .end .text {
     line-height: 1.5;
